@@ -25,4 +25,9 @@ export class ItemComponent implements OnInit {
     this.item.description = description;
   }
 
+  removeItem(item : any) {
+    console.log(item);
+    this.remove.emit(item);
+  }
+
 }
